@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+    <title>Events | Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- NAV SECTION STARTS -->
+      <div class="nav">
+        <a href="/home.html"><li>Home</li></a>
+        <a href="/eventlist.html"><li>All Events</li></a>
+        <a href="/newevent.html"><li>Create Events</li></a>
+        <a href="/aboutus.html"><li>About us</li></a>
+      </div>
+      <!-- NAV SECTION ENDS -->
+      <!-- MAIN SECTION STARTS -->
+      <div class="main">
+        <!-- HEADER STARTS -->
+        <h1 class="header">Event Space</h1>
+        <img
+          src="https://images.unsplash.com/photo-1559373098-518914f1c315?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt="img-header"
+          class="img-header"
+          height="500"
+        />
+        <!-- HEADER ENDS -->
+        <!-- EXAMPLE EVENTS STARTS -->
+        <div class="events-container">
+          <!-- EXAMPLE EVENTS 1 STARTS -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://images.unsplash.com/photo-1525268771113-32d9e9021a97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt="partydreamland"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <ul class="info-list">
+                  <li>
+                    <span id="event-bolder">Party Dreamland</span>
+                  </li>
+                  <li><span id="event-bolder">Date:</span> 18/12/2021</li>
+                  <li id="description">
+                    <span id="event-bolder">Description:</span> A party is a
+                    gathering of people who have been invited by a host for the
+                    purposes of socializing, conversation, recreation, or as
+                    part of a festival or other commemoration or celebration of
+                    a special occasion.
+                  </li>
+                  <li><span id="event-bolder">Category:</span> After Work</li>
+                  <button class="button" onclick="toggleDescription()">
+                    <span id="event-bolder">More info</span>
+                  </button>
+                  <li><a href="/detailpage.html">Go to Event Page</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EXAMPLE EVENTS 1 ENDS -->
+          <!-- EXAMPLE EVENTS 2 STARTS -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://images.unsplash.com/photo-1532499016263-f2c3e89de9cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt="baking"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <ul class="info-list">
+                  <li><span id="event-bolder">Bake A Wish</span></li>
+                  <li><span id="event-bolder">Date:</span> 19/12/2021</li>
+                  <li id="description">
+                    <span id="event-bolder">Description:</span> Baking is a
+                    method of preparing food that uses dry heat, typically in an
+                    oven, but can also be done in hot ashes, or on hot stones.
+                    The most common baked item is bread but many other types of
+                    foods are baked.
+                  </li>
+                  <li><span id="event-bolder">Category:</span> Education</li>
+                  <button class="button" onclick="toggleDescription()">
+                    <span id="event-bolder">More info</span>
+                  </button>
+                  <li><a href="/detailpage.html">Go to Event Page</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EXAMPLE EVENTS 2 ENDS -->
+          <!-- EXAMPLE EVENTS 3 STARTS -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://images.unsplash.com/photo-1609601241542-f0a4f70b531a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt="running"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <ul class="info-list">
+                  <li><span id="event-bolder">Run for Life</span></li>
+                  <li><span id="event-bolder">Date:</span> 20/12/2021</li>
+                  <li id="description">
+                    <span id="event-bolder">Description:</span> Experts define
+                    physical fitness as “one's ability to execute daily
+                    activities with optimal performance, endurance, and strength
+                    with the management of disease, fatigue, and stress and
+                    reduced sedentary behavior.”
+                  </li>
+                  <li><span id="event-bolder">Category:</span> Fitness</li>
+                  <button class="button" onclick="toggleDescription()">
+                    <span id="event-bolder">More info</span>
+                  </button>
+                  <li><a href="/detailpage.html">Go to Event Page</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EXAMPLE EVENTS 3 ENDS -->
+          <!-- EXAMPLE EVENTS 4 STARTS -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://images.unsplash.com/photo-1594737626072-90dc274bc2bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt="weight-training"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <ul class="info-list">
+                  <li><span id="event-bolder">Lift up Your Spirit</span></li>
+                  <li><span id="event-bolder">Date:</span> 21/12/2021</li>
+                  <li id="description">
+                    <span id="event-bolder">Description:</span> Experts define
+                    physical fitness as “one's ability to execute daily
+                    activities with optimal performance, endurance, and strength
+                    with the management of disease, fatigue, and stress and
+                    reduced sedentary behavior.”
+                  </li>
+                  <li><span id="event-bolder">Category:</span> Fitness</li>
+                  <button class="button" onclick="toggleDescription()">
+                    <span id="event-bolder">More info</span>
+                  </button>
+                  <li><a href="/detailpage.html">Go to Event Page</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EXAMPLE EVENTS 4 ENDS -->
+          <!-- EXAMPLE EVENTS 5 STARTS -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://images.unsplash.com/photo-1605926637512-c8b131444a4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt="Christmas"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <ul class="info-list">
+                  <li><span id="event-bolder">Christmas Party</span></li>
+                  <li><span id="event-bolder">Date:</span> 25/12/2021</li>
+                  <li id="description">
+                    <span id="event-bolder">Description:</span> A party is a
+                    gathering of people who have been invited by a host for the
+                    purposes of socializing, conversation, recreation, or as
+                    part of a festival or other commemoration or celebration of
+                    a special occasion.
+                  </li>
+                  <li><span id="event-bolder">Category:</span> After Work</li>
+                  <button class="button" onclick="toggleDescription()">
+                    <span id="event-bolder">More info</span>
+                  </button>
+                  <li><a href="/detailpage.html">Go to Event Page</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EXAMPLE EVENTS 5 ENDS -->
+          <!-- EXAMPLE EVENTS 6 STARTS -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="https://images.unsplash.com/photo-1585562643388-012110bdde8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                  alt="japan"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <ul class="info-list">
+                  <li><span id="event-bolder">Japan Culture</span></li>
+                  <li><span id="event-bolder">Date:</span> 05/01/2022</li>
+                  <li id="description">
+                    <span id="event-bolder">Description:</span> Japan has a
+                    fascinating and multifaceted culture; on the one hand it is
+                    steeped in the deepest of traditions dating back thousands
+                    of years; on the other it is a society in a continual state
+                    of rapid flux, with continually shifting fads.
+                  </li>
+                  <li><span id="event-bolder">Category:</span> Education</li>
+                  <button class="button" onclick="toggleDescription()">
+                    <span id="event-bolder">More info</span>
+                  </button>
+                  <li><a href="/detailpage.html">Go to Event Page</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EXAMPLE EVENTS 6 ENDS -->
+        </div>
+        <!-- EXAMPLE EVENTS ENDS -->
+      </div>
+      <!-- MAIN SECTION ENDS -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+    <title>Events | New Event</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- NAV SECTION STARTS -->
+      <div class="nav">
+        <a href="/home.html"><li>Home</li></a>
+        <a href="/eventlist.html"><li>All Events</li></a>
+        <a href="/newevent.html"><li>Create Events</li></a>
+        <a href="/aboutus.html"><li>About us</li></a>
+      </div>
+      <!-- NAV SECTION ENDS -->
+      <!-- MAIN SECTION STARTS -->
+      <div class="main">
+        <!-- HEADER STARTS -->
+        <h1 class="header">Create Your Own Event!</h1>
+        <!-- HEADER ENDS -->
+        <!-- FORM SECTION STARTS -->
+        <div class="form-container">
+          <form>
+            <label for="eventname">Name of Event</label>
+            <input
+              type="text"
+              id="eventname"
+              name="eventname"
+              placeholder="Please enter your event's name..."
+            />
+
+            <label for="date">Date of Event</label>
+            <input type="date" id="date" name="date" />
+
+            <label for="description">Description of Event</label>
+            <input
+              type="text"
+              id="description"
+              name="description"
+              placeholder="Please write your event's description..."
+            />
+
+            <label for="agenda-form">Agenda of Event</label>
+            <input
+              type="text"
+              id="agenda-form"
+              name="agenda-form"
+              placeholder="Please write your event's agenda..."
+            />
+
+            <label for="category">Event's Category</label>
+            <select id="category" name="category">
+              <option value="fitness">Fitness</option>
+              <option value="education">Education</option>
+              <option value="afterwork">After Work</option>
+            </select>
+            <div class="img-upload-container">
+              <label for="imgupload">Upload 4 Photos of Your Event</label>
+              <label for="imgupload" class="img-upload"
+                >📤 Upload 1st photo</label
+              >
+              <input type="file" id="myFile" name="filename" />
+              <label for="imgupload" class="img-upload"
+                >📤 Upload 2nd photo</label
+              >
+              <input type="file" id="myFile" name="filename" />
+              <label for="imgupload" class="img-upload"
+                >📤 Upload 3rd photo</label
+              >
+              <input type="file" id="myFile" name="filename" />
+              <label for="imgupload" class="img-upload"
+                >📤 Upload 4th photo</label
+              >
+              <input type="file" id="myFile" name="filename" />
+            </div>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <!-- FORM SECTION ENDS -->
+      </div>
+    </div>
+    <!-- MAIN SECTION ENDS -->
+  </body>
+</html>

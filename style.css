@@ -1,0 +1,240 @@
+body {
+  background-color: #ddfcfc;
+}
+
+.nav {
+  padding-top: 120px;
+  margin-left: 50px;
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: deeppink;
+}
+
+a:hover {
+  color: #f3acce;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  list-style: none;
+}
+
+.header {
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+  font-size: 50px;
+}
+
+.img-header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding-bottom: 50px;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 10%;
+  row-gap: 50px;
+  padding-left: 15%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  padding-top: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: cornsilk;
+  color: black;
+  transform: rotateY(180deg);
+  font-family: "Baloo 2", cursive;
+  font-size: 13 px;
+}
+
+.info-list {
+  list-style: none;
+  padding-top: -10px;
+  padding-left: 10px;
+}
+
+.info-detail {
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+  list-style: none;
+}
+
+.button {
+  background-color: cornsilk;
+  color: black;
+  border: transparent;
+  padding: 0px;
+  font-family: "Baloo 2", cursive;
+  font-size: 13 px;
+}
+
+.button:hover {
+  border: #ace7fa 2px solid;
+  color: black;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 10%;
+  row-gap: 50px;
+  padding-left: 15%;
+  padding-top: 50px;
+}
+.img-container img {
+  height: 200px;
+  width: 200px;
+}
+.img-container .expand:hover {
+  transform: scale(1.5);
+}
+
+.info-container {
+  padding-left: 50px;
+  margin-top: -30px;
+}
+
+#agenda {
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+  border-collapse: collapse;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#agenda td,
+#agenda th {
+  border: 1px solid transparent;
+  padding: 8px;
+}
+
+#agenda tr:nth-child(even) {
+  background-color: cornsilk;
+}
+
+#agenda th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ff9dea;
+  color: white;
+}
+
+input[type=text],
+[type=date],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #ffabf1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #f989fd;
+}
+
+.form-container {
+  border-radius: 5px;
+  background-color: cornsilk;
+  padding: 20px;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+}
+
+.company-container,
+.team-container,
+.ceo-container {
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+}
+.company-container img,
+.team-container img,
+.ceo-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding-bottom: 50px;
+  height: 600px;
+}
+.company-container p,
+.company-container h3,
+.team-container p,
+.team-container h3,
+.ceo-container p,
+.ceo-container h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#ceo-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
