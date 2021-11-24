@@ -1,5 +1,7 @@
 @use "variables";
 
+// MIXIN SECTION
+
 @mixin primaryFontStyleSize {
   font-family: variables.$primary-font;
   font-size: variables.$primary-textsize;
@@ -38,10 +40,20 @@
   padding-bottom: 50px;
 }
 
+// BODY & CONTAINER SECTION **Container is for dividing the page into 2 columns
+
 body {
   background-color: rgb(221, 252, 252);
   // @include primaryFontStyleSize;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  list-style: variables.$no-list-style;
+}
+
+// NAV SECTION
 
 .nav {
   padding-top: 120px;
@@ -59,33 +71,37 @@ a:hover {
   color: rgb(243, 172, 206);
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 10% 90%;
-  list-style: variables.$no-list-style;
-}
+// HEADER SECTION FOR EVERY PAGE
 
 .header {
   text-align: center;
   @include headerFontStyleSize();
 }
 
+// IMG HEADER FOR HOME
+
 .img-header {
   @include centeredItem;
 }
+
+// EVENT CONTAINER TO KEEP ALL FLIP CARDS IN PLACE IN BOTH HOME AND ALL EVENTS PAGES
 
 .events-container {
   @include flexBoxContainer;
 }
 
+// EVENT FLIP CARD SETTINGS
+
+// FLIP CARD CONTAINER
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 300px;
-  perspective: 1000px;
+  perspective: 1000px; //FOR 3D EFFECT
   padding-top: 10px;
 }
 
+// POSITION THE FRONT AND BACK SIDE
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -93,10 +109,6 @@ a:hover {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
 }
 
 .flip-card-front,
@@ -107,6 +119,12 @@ a:hover {
   backface-visibility: hidden;
 }
 
+// WHEN HOVER, THE CARD WILL FLIP
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+// STYLING THE FRONT AND BACK SIDE
 .flip-card-front {
   background-color: #bbb;
   color: black;
@@ -119,17 +137,14 @@ a:hover {
   @include cardFontStylesSize();
 }
 
+//STYLING ALL INFO ON THE FLIP CARDS IN HOME AND ALL EVENTS PAGES
 .info-list {
   list-style: variables.$no-list-style;
   padding-top: -10px;
   padding-left: 10px;
 }
 
-.info-detail {
-  @include primaryFontStyleSize;
-  list-style: variables.$no-list-style;
-}
-
+//STYLING MORE INFO BUTTON
 .button {
   background-color: cornsilk;
   color: black;
@@ -144,6 +159,14 @@ a:hover {
   color: black;
 }
 
+//DETAIL/EVENT PAGE
+//STYLING INFO SECTION IN DETAIL PAGE/EVENT DETAIL
+.info-detail {
+  @include primaryFontStyleSize;
+  list-style: variables.$no-list-style;
+}
+
+//CONTAINER FOR KEEPING ALL EVENT PHOTOS IN PLACE
 .img-container {
   @include flexBoxContainer;
   padding-top: 50px;
@@ -156,14 +179,16 @@ a:hover {
   }
 }
 
+//CONTAINER FOR KEEPING EVERYTHING IN DETAIL PAGE TOGETHER AND MOVING AWAY FROM NAV SECTION
 .info-container {
   padding-left: 50px;
   margin-top: -30px;
 }
 
+//AGENDA SETTINGS
 #agenda {
   @include primaryFontStyleSize;
-  border-collapse: collapse;
+  border-collapse: collapse; //single line table
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -187,6 +212,8 @@ a:hover {
   color: white;
 }
 
+//NEW EVENT/CREATE EVENT PAGE
+//STYLING FORM
 input[type="text"],
 [type="date"],
 select {
@@ -216,6 +243,7 @@ input[type="submit"]:hover {
   background-color: #f989fd;
 }
 
+//FORM CONTAINER TO KEEP ALL THE FORM BOXES IN PLACE AND STYLING
 .form-container {
   border-radius: 5px;
   background-color: cornsilk;
@@ -225,6 +253,8 @@ input[type="submit"]:hover {
   @include primaryFontStyleSize;
 }
 
+//ABOUT US PAGE
+//STYLING ALL CONTAINERS
 .company-container,
 .team-container,
 .ceo-container {
